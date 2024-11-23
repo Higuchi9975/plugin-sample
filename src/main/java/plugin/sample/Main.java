@@ -19,6 +19,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Main extends JavaPlugin implements Listener {
 
+
   private int count;
 
   @Override
@@ -52,7 +53,7 @@ public final class Main extends JavaPlugin implements Listener {
         fireworkMeta.addEffect(
             FireworkEffect.builder()
                 .withColor(color)
-                .with(Type.STAR)
+                .with(Type.BALL_LARGE)
                 .withFlicker()
                 .build());
         fireworkMeta.setPower(0);
